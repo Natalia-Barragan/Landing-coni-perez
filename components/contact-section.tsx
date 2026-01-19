@@ -94,7 +94,7 @@ export function ContactSection({ selectedArtwork, onClearSelection }: ContactSec
             </h3>
 
             <div className="space-y-6 mb-8">
-              <a
+              {/* <a
                 href="mailto:[EMAIL_ADDRESS]"
                 className="flex items-center gap-4 text-muted-foreground hover:text-foreground transition-colors group"
               >
@@ -102,7 +102,7 @@ export function ContactSection({ selectedArtwork, onClearSelection }: ContactSec
                   <Mail size={20} />
                 </span>
                 <span>[EMAIL_ADDRESS]</span>
-              </a>
+              </a> */}
 
               <a
                 href="https://wa.me/5491123456789"
