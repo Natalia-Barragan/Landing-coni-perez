@@ -20,7 +20,7 @@ export function HeroSection() {
             </p>
             <div className="flex items-center justify-center lg:justify-start gap-2 mb-8">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                La Plata, Buenos Aires
+                La Plata, Buenos Aires.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
