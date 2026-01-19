@@ -209,9 +209,9 @@ function ArtworkModal({ artwork, onClose, onReserve }: ArtworkModalProps) {
   return (
     <div className="fixed inset-0 z-50 bg-foreground/80 backdrop-blur-sm flex items-center justify-center p-4">
       <div className="bg-background max-w-7xl w-full max-h-[90vh] overflow-y-auto">
-        <div className="grid md:grid-cols-2">
+        <div className="grid md:grid-cols-[2fr_1fr]">
           {/* Image Section */}
-          <div className="relative aspect-square md:aspect-auto md:min-h-[500px]">
+          <div className="relative aspect-square md:aspect-auto md:min-h-[85vh]">
             <Image
               src={artwork.images[currentImageIndex] || "/placeholder.svg"}
               alt={artwork.title}
