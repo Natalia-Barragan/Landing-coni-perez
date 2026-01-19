@@ -79,7 +79,7 @@ export function ContactSection({ selectedArtwork, onClearSelection }: ContactSec
             Contacto
           </p>
           <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-4 text-balance">
-            Reservá tu obra favorita
+            Reservá tu cuadro favorito
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Completá el formulario y te respondo a la brevedad con el link de pago para confirmar tu reserva.

@@ -116,11 +116,13 @@ function ArtworkCard({ artwork, onSelect }: ArtworkCardProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
   const nextImage = (e: React.MouseEvent) => {
+    e.preventDefault()
     e.stopPropagation()
     setCurrentImageIndex((prev) => (prev + 1) % artwork.images.length)
   }
 
   const prevImage = (e: React.MouseEvent) => {
+    e.preventDefault()
     e.stopPropagation()
     setCurrentImageIndex((prev) => (prev - 1 + artwork.images.length) % artwork.images.length)
   }
@@ -142,18 +144,20 @@ function ArtworkCard({ artwork, onSelect }: ArtworkCardProps) {
         {artwork.images.length > 1 && (
           <>
             <button
+              type="button"
               onClick={prevImage}
-              className="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 bg-background/80 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity hover:bg-background"
+              className="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 z-10 bg-background/80 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity hover:bg-background rounded-full"
               aria-label="Imagen anterior"
             >
-              <ChevronLeft size={18} />
+              <ChevronLeft size={20} />
             </button>
             <button
+              type="button"
               onClick={nextImage}
-              className="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 bg-background/80 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity hover:bg-background"
+              className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 z-10 bg-background/80 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity hover:bg-background rounded-full"
               aria-label="Siguiente imagen"
             >
-              <ChevronRight size={18} />
+              <ChevronRight size={20} />
             </button>
 
             {/* Dots Indicator */}
