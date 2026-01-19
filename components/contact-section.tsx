@@ -44,15 +44,15 @@ export function ContactSection({ selectedArtwork, onClearSelection }: ContactSec
 
     // Create WhatsApp message
     const whatsappMessage = encodeURIComponent(
-      `¡Hola Coni! 👋\n\nMe interesa tu obra:\n\n` +
-      `📧 Nombre: ${formData.nombre}\n` +
-      `✉️ Email: ${formData.email}\n` +
-      `🎨 Obra: ${formData.obra || "Consulta general"}\n` +
-      `💬 Mensaje: ${formData.mensaje}`
+      `¡Hola Coni! \n\nMe interesa tu obra:\n\n` +
+      `Nombre: ${formData.nombre}\n` +
+      `Email: ${formData.email}\n` +
+      `Obra: ${formData.obra || "Consulta general"}\n` +
+      `Mensaje: ${formData.mensaje}`
     )
 
     // Open WhatsApp with pre-filled message (replace with actual number)
-    const whatsappUrl = `https://wa.me/5491123456789?text=${whatsappMessage}`
+    const whatsappUrl = `https://wa.me/5492214202618?text=${whatsappMessage}`
     window.open(whatsappUrl, '_blank')
 
     setIsSubmitting(false)
