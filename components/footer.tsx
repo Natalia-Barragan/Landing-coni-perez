@@ -41,7 +41,15 @@ export function Footer() {
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
           <p className="text-sm text-primary-foreground/70">
-            © {currentYear} Coni Perez. Todos los derechos reservados.
+            © {currentYear} Coni Perez. Hecho por{" "}
+            <a
+              href="https://barragan-natalia-portfolio-vert-eight-97.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-1 rounded hover:bg-primary-foreground hover:text-primary transition-colors underline-offset-4 hover:underline"
+            >
+              Natalia Barragan
+            </a>
           </p>
         </div>
       </div>
