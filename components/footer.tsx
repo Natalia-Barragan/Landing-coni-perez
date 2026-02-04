@@ -43,12 +43,12 @@ export function Footer() {
           <p className="text-sm text-primary-foreground/70">
             © {currentYear} Coni Perez. Hecho por{" "}
             <a
-              href="https://barragan-natalia-portfolio-vert-eight-97.vercel.app/"
+              href="https://nbdigital.lat/"
               target="_blank"
               rel="noopener noreferrer"
               className="px-1 rounded hover:bg-primary-foreground hover:text-primary transition-colors underline-offset-4 hover:underline"
             >
-              Natalia Barragan
+              NBDigital
             </a>
           </p>
         </div>
